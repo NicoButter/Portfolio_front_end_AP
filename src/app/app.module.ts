@@ -26,6 +26,7 @@ import { EditAboutMiComponent } from './componentes/about-mi/edit-about-mi.compo
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { NewExperienciaComponent } from './componentes/experiencia/new-experiencia.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     EditeducacionComponent,
     EditSkillComponent,
     NewSkillComponent,
-    EditAboutMiComponent
+    EditAboutMiComponent,
+    NewExperienciaComponent
   ],
   imports: [
     BrowserModule,
