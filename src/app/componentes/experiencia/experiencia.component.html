@@ -1,0 +1,75 @@
+<div class="row fuente-roboto">
+    <h1 id="experiencia">Experiencia laboral</h1>
+    <div class="co lg 2">
+        <button type="button" class="btn btn-success nueva_experiencia" routerLink="/nuevaexp" *ngIf="isLogged">
+            Agregar experiencia
+        </button>
+    </div>
+    <div class="col-lg-1"></div>
+    <div class="col-lg-11" >
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Experiencia of experiencia">
+                    <td>{{Experiencia.nombreE}}</td>
+                    <td>{{Experiencia.descripcionE}}</td>
+                    <td *ngIf="isLogged"><button class="btn btn-success editar" routerLink="/editexp/{{Experiencia.id}}"><i class="bi bi-pencil"></i> EDITAR</button></td>    
+                    <td *ngIf="isLogged"><button class="btn btn-danger borrar" (clic)="delete(Experiencia.id)"><i class="bi bi-file-earmark-x"></i> BORRAR</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    <!-- <div class="col-lg-11">
+        <ul>
+            <li>
+                <h2>Jefe técnico de operaciones</h2> - <h3>18 años - desde 2004 hasta 2022</h3>
+            </li>
+            <p>Primero me de desempeñé como crouprier, luego, al poco tiempo integré el departamento de Conversión, en donde realizaba las tareas de carga 
+               y corrección de datos para la fizcalización. Luego para finalizar, revestí el cargo de Jefe técnico de operaciones durante mas de 15 años con personal acargo, en la sucursal de 
+               Río Gallegos y El Calafate. Participé del equipo de intalación de máquinas tragamonedas y equipos informáticos, dirigí un equipo técnico durante 
+               los días de inauguración de City Center en la ciudad de Rosario provincia de Santa Fé.
+            </p>
+        </ul>
+        <ul>
+            <li>
+                <h2>Dirección de innovación y modernización</h2> - <h3>3 años - desde 2019 a la actualidad</h3>
+            </li>
+            <p> Integro el equipo técnico de la Dirección de innovación y modernización de la Honorable Cámara de Diputados
+                de la provincia de Santa Cruz en donde realizo tareas de mantenimiento e instalación de equipos de informática, telecomunicaciónes
+                CCTV y integro el equipode desarrollode software de la dirección.
+            </p>
+        </ul>
+    </div>
+</div>-->

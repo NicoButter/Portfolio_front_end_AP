@@ -1,0 +1,12 @@
+.row{
+    padding: 20px;
+    background-color: #39393f ;
+}
+
+h1, h2, p{
+    color: blanchedalmond;
+}
+
+#proyectos{
+    font-weight: bold;
+}

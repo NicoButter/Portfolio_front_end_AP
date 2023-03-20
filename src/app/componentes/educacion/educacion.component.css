@@ -1,0 +1,18 @@
+*{
+    color: blanchedalmond;
+}
+
+.row{
+    padding:50px;
+    background-color:  rgb(57, 57, 63);
+}
+
+.editar{
+    color:blanchedalmond;
+    background-color: green;
+}
+
+.borrar{
+    color:blanchedalmond;
+    background-color: red;
+}

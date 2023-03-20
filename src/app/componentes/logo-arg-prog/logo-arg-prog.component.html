@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="container">
+        <div class="logo">
+            <img src="../../../assets/Argentina_programa_logo.png" id = "logo-arg-prog" alt="logo-arg-prog">
+        </div>
+        <div class="logos-redes-sociales">
+            <a href="https://www.linkedin.com/in/nicol%C3%A1s-butterfield-9964aa1a3" target="_blank"><img src="../../../assets/linkedin.png" class="img-fluid" alt="logo-linkedin"></a>
+            <a href="https://github.com/NicoButter" target="_blank"><img src="../../../assets/github.png" class="img-fluid" alt="logo-github"></a>
+            <a href=""><img src="../../../assets/instagram.png" class="img-fluid" alt="logo-instagram"></a>
+            <a href="https://www.facebook.com/nicolas.butterfield" target="_blank"><img src="../../../assets/facebook.png" class="img-fluid" alt="logo-facebook"></a>   
+            <button type="button" class="btn btn outline-light" (click)="login()" *ngIf="!isLogged">log in</button>
+            <button type="button" class="btn btn outline-light" (click)="onLogOut()" *ngIf="isLogged">Cerrar sesión</button>
+        </div>
+    </div>
+</div>
+

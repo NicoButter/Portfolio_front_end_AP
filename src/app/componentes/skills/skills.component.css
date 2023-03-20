@@ -1,0 +1,26 @@
+.row{
+    padding:50px;
+    background-color:blanchedalmond;
+}
+
+.borrar, .editar{
+    color:blanchedalmond;
+}
+
+.editar{
+    background-color: green;
+}
+
+#habilidades{
+    font-weight: bold;
+}
+
+.circulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nueva_habilidad{
+    color: blanchedalmond;
+}

@@ -1,0 +1,25 @@
+.row{
+    padding:50px;
+}
+
+div{
+    background-color:blanchedalmond;
+}
+
+h1, h2,  h3, p{
+    display: inline;
+    color:#39393f;    
+}
+
+#experiencia{
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+.editar, .borrar, .nueva_experiencia{
+    color: blanchedalmond;
+}
+
+.nueva_experiencia{
+    background-color:black;
+}

@@ -1,0 +1,67 @@
+.row{
+    /*padding: 20px;*/
+    /*width: fit-content;*/
+    height: 200px;
+    align-items: center;
+}
+
+div{
+    background-color:  rgb(57, 57, 63);
+    text-align: center;
+}
+
+span{
+    margin-left: 10px;
+}
+
+/*ESTILO PARA LA FOTO PERSONAL*/
+
+@media(min-width: 576px){
+    .mi_foto{
+        position: absolute;
+        width: 17%;
+        border-radius: 80%;
+        box-shadow: 5px 5px 5px black;
+        left: 1%;
+        top: 620px;
+    }
+}
+
+@media(max-width: 575px){
+    .mi_foto{
+        position: absolute;
+        width: 30%;
+        border-radius: 80%;
+        box-shadow: 5px 5px 5px black;
+        left: 1%;
+        top: 150px;
+    }
+}
+
+/*ETIQUETA NOMBRE*/
+
+.mi_nombre{
+    font-weight: bold;
+
+}
+
+/*#sobre-mi{
+    font-weight: bold;
+    margin-top: 2px;
+}*/
+
+h1, h4{
+    color: blanchedalmond;
+    margin-left: 5px;
+}
+
+p{
+    color: blanchedalmond;
+
+}
+
+.caja_sobre_mi{
+    display: flex;
+    float: right;
+    margin-left: 100px;
+}
