@@ -23,10 +23,10 @@ import { EditeducacionComponent } from './componentes/educacion/editeducacion.co
 import { EditSkillComponent } from './componentes/skills/edit-skill.component';
 import { NewSkillComponent } from './componentes/skills/new-skill.component';
 import { EditAboutMiComponent } from './componentes/about-mi/edit-about-mi.component';
+import { NewExperienciaComponent } from './componentes/experiencia/new-experiencia.component';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideStorage,getStorage } from '@angular/fire/storage';
-import { NewExperienciaComponent } from './componentes/experiencia/new-experiencia.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +56,8 @@ import { NewExperienciaComponent } from './componentes/experiencia/new-experienc
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
     FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage()),
   ],
   providers: [
     interceptorProvider
