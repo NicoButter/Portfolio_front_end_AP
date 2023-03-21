@@ -11,7 +11,7 @@ import { environment } from 'src/environments/environment';
 })
 export class AuthService {
   
-  authURL = environment.URL + 'auth';
+  authURL = environment.URL + 'auth/';
   
   //authURL = 'https://portfolio-bkd-nicolas-butterfield.onrender.com/auth';
 

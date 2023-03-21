@@ -10,7 +10,7 @@ import { environment } from 'src/environments/environment';
 
 export class PersonaService {
   
-  URL = environment.URL + 'personas';
+  URL = environment.URL + 'personas/';
   
   //URL = 'https://portfolio-bkd-nicolas-butterfield.onrender.com/personas/';
   

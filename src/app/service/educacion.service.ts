@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 })
 export class EducacionService {
   
-  URL = environment.URL + '/educacion';
+  URL = environment.URL + 'educacion/';
   
   //URL = 'https://portfolio-bkd-nicolas-butterfield.onrender.com/educacion/';
 
