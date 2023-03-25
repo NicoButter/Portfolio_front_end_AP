@@ -9,11 +9,10 @@ import { EducacionService } from 'src/app/service/educacion.service';
   styleUrls: ['./editeducacion.component.css']
 })
 export class EditeducacionComponent {
+  
   educacion: Educacion = null;
 
-  constructor(private educacionS: EducacionService, private activatedRouter: ActivatedRoute, private router: Router){
-
-  }
+  constructor(private educacionS: EducacionService, private activatedRouter: ActivatedRoute, private router: Router){}
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];

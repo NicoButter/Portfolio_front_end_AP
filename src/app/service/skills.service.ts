@@ -12,9 +12,9 @@ export class SkillsService {
   
   //skillsURL = environment.URL + 'skills/';
   
-  skillsURL = 'https://portfolio-bkd-nicolas-butterfield.onrender.com/skills/';
+  //skillsURL = 'https://portfolio-bkd-nicolas-butterfield.onrender.com/skills/';
 
-  //skillsURL = 'http://localhost:8080/skills/'
+  skillsURL = 'http://localhost:8080/skills/'
 
   constructor(private httpClient: HttpClient) {}
   

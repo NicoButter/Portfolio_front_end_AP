@@ -32,15 +32,16 @@ export class ExperienciaComponent {
     this.sExperiencia.lista().subscribe(data => {this.experiencia = data;})
   }
 
-  delete(id?: number){
+  delete(id: number){
     if(id != undefined){
       this.sExperiencia.delete(id).subscribe(
         data => {
           this.cargarExperiencia();
         }, err => {
-          alert("Error al intentar borrar la experiencia seleccionada.");
+          alert("Error al intentar borrar la experiencia seleccionada, reintente.");
         }
       )
     }
   }
+  
 }

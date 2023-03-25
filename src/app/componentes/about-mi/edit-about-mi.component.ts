@@ -36,7 +36,7 @@ export class EditAboutMiComponent {
       data => {
         this.router.navigate(['']);
       }, err => {
-        alert("Error al intentar modificar el registro, reintente 17.");
+        alert("Error al intentar modificar el registro about-me, reintente.");
         this.router.navigate(['']);
       }
     )

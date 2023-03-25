@@ -1,4 +1,5 @@
 export class Educacion {
+  
     id: number;
     nombreE: string;
     descripcionE: string;
@@ -7,4 +8,5 @@ export class Educacion {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
     }
+    
 }

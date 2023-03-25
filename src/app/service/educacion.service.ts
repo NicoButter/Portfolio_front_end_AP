@@ -11,9 +11,9 @@ export class EducacionService {
   
   //URL = environment.URL + 'educacion/';
   
-  URL = 'https://portfolio-bkd-nicolas-butterfield.onrender.com/educacion/';
+  //URL = 'https://portfolio-bkd-nicolas-butterfield.onrender.com/educacion/';
 
-  //URL = 'http://localhost:8080/educacion/';
+  URL = 'http://localhost:8080/educacion/';
 
   constructor(private httpClient: HttpClient) { }
 
@@ -34,7 +34,7 @@ export class EducacionService {
   }
 
   public delete(id: number): Observable<any>{
-    return this.httpClient.delete<any>(this.update + `delete/${id}`);
+    return this.httpClient.delete<any>(this.URL + `delete/${id}`);
   }
 
 }

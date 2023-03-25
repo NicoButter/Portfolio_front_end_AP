@@ -8,23 +8,26 @@ import { SExperienciaService } from 'src/app/service/sexperiencia.service';
   templateUrl: './new-experiencia.component.html',
   styleUrls: ['./new-experiencia.component.css']
 })
+
 export class NewExperienciaComponent implements OnInit {
+  
   nombreE: string = '';
   descripcionE: string = '';
 
   constructor(private sExperiencia: SExperienciaService, private router: Router) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   onCreate(): void {
-    const expe = new Experiencia(this.nombreE, this.descripcionE);
-    this.sExperiencia.save(expe).subscribe(
+
+    const experiencia = new Experiencia(this.nombreE, this.descripcionE);
+    
+    this.sExperiencia.save(experiencia).subscribe(
       data => {
         alert("Experiencia añadida");
         this.router.navigate(['']);
       }, err => {
-        alert("Falló");
+        alert("Ocurrió un error al agregar la experiencia, reintente.");
         this.router.navigate(['']);
       }
     )

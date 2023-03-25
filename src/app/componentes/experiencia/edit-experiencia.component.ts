@@ -11,7 +11,7 @@ import { SExperienciaService } from 'src/app/service/sexperiencia.service';
 
 export class EditExperienciaComponent {
 
-  experienciaLaboral: Experiencia = null;
+  experiencia: Experiencia = null;
   
   constructor(private sExperiencia: SExperienciaService, private activatedRouter: ActivatedRoute, private router: Router){}
 
@@ -19,7 +19,7 @@ export class EditExperienciaComponent {
     const id = this.activatedRouter.snapshot.params['id'];
     this.sExperiencia.detail(id).subscribe(
       data =>{
-        this.experienciaLaboral = data;
+        this.experiencia = data;
       }, err =>{
         alert("Error al editar.");
         this.router.navigate(['']);
@@ -30,7 +30,7 @@ export class EditExperienciaComponent {
 
   onUpdate(): void{
     const id = this.activatedRouter.snapshot.params['id'];
-    this.sExperiencia.update(id, this.experienciaLaboral).subscribe(
+    this.sExperiencia.update(id, this.experiencia).subscribe(
       data => {
         this.router.navigate(['']);
       }, err =>{

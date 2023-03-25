@@ -9,9 +9,11 @@ import { TokenService } from 'src/app/service/token.service';
   styleUrls: ['./about-mi.component.css']
 })
 export class AboutMiComponent {
+  
   persona: persona = null;
   
   constructor(public servicioPersona : PersonaService, private tokenService: TokenService){}
+  
   isLogged = false;
 
   ngOnInit(): void{
