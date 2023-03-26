@@ -9,12 +9,23 @@
     <div class="col-lg-11" >
         <table class="table">
             <tbody>
-                <tr *ngFor="let Experiencia of experiencia">
-                    <td>{{Experiencia.nombreE}}</td>
-                    <td>{{Experiencia.descripcionE}}</td>
-                    <td *ngIf="isLogged"><button class="btn btn-success editar" routerLink="/editexp/{{Experiencia.id}}"><i class="bi bi-pencil"></i> EDITAR</button></td>    
-                    <td *ngIf="isLogged"><button class="btn btn-danger borrar" (clic)="delete(Experiencia.id)"><i class="bi bi-file-earmark-x"></i> BORRAR</button></td>
+                <tr *ngFor="let experiencia of experiencia">
+                    <td>{{experiencia.nombre}}</td>
+                    <td>{{experiencia.descripcion}}</td>
+                    
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-success editar" routerLink="/editexp/{{experiencia.id}}">
+                            <i class="bi bi-pencil"></i> EDITAR
+                        </button>
+                    </td>
+
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-danger borrar" (click)="delete(experiencia.id)">
+                            <i class="bi bi-file-earmark-x"></i> BORRAR
+                        </button>
+                    </td>
                 </tr>
+
             </tbody>
         </table>
     </div>

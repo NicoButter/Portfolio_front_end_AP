@@ -15,7 +15,7 @@ export class EducacionComponent {
 
   constructor(private educacionS: EducacionService, private tokenService: TokenService){}
 
-  isLogged =false;
+  isLogged = false;
 
   ngOnInit(): void{
     
@@ -29,11 +29,7 @@ export class EducacionComponent {
   }
 
   cargarEducacion(): void{
-    this.educacionS.lista().subscribe(
-      data =>{
-        this.educacion = data;
-      } 
-    )
+    this.educacionS.lista().subscribe(data => {this.educacion = data;})
   }
 
   borrar(id: number){

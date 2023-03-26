@@ -13,9 +13,7 @@
                     <td>
                         <h2>{{Project.nombre}}</h2>
                     </td>
-                    <td>{{Project.descripcion}}</td>
-                    <td>{{Project.img}}</td>
-                    
+                    <td>{{Project.descripcion}}</td>                    
                     <td *ngIf="isLogged">
                         <button class="btn btn-success editar" routerLink="/editproject/{{Project.id}}">
                             <i class="bi bi-pencil"></i> EDITAR
@@ -27,8 +25,16 @@
                             <i class="bi bi-file-earmark-x"></i> BORRAR
                         </button>
                     </td>
+
+                    <div class="row">
+                        <img src={{Project.img}} class="img-fluid mi_foto" alt="mi_proyecto">
+                    </div>
+
                 </tr>
             </tbody>
+
+            
+
         </table>
     </div>
 </div>
