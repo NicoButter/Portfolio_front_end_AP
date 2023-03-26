@@ -42,8 +42,8 @@ export class EditProjectsComponent {
   }
 
   uploadImage($event: any){
-    const id = this.activatedRouter.snapshot.params['id'];
-    const name = 'proyecto_' + id;
+    const id = this.activatedRouter.snapshot.params['id']
+    const name = 'proyecto_' + id
     this.imageService.uploadImage($event, name);
   }
 

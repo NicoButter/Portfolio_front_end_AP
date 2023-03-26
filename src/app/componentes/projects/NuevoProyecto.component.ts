@@ -22,7 +22,7 @@ export class NuevoProyecto implements OnInit {
 
   onCreate(): void{
     
-    const proyecto = new Projects (this.nombre, this.descripcion, this.img);
+    const proyecto = new Projects (this.nombre, this.descripcion, this.img)
 
     this.projectS.save(proyecto).subscribe(
       data => {
@@ -36,8 +36,8 @@ export class NuevoProyecto implements OnInit {
   }
 
   uploadImage($event: any){
-    const id = this.activatedRouter.snapshot.params['id'];
-    const name = 'proyecto_' + id;
+    const id = this.activatedRouter.snapshot.params['id']
+    const name = 'proyecto_' + id
     this.imageService.uploadImage($event, name);
   }
 
