@@ -46,6 +46,9 @@ export class SkillsComponent implements OnInit {
         }
       )
     }
+    else{
+      console.log("VARIABLE INDEFINIDA")
+    }
   }
 
 }

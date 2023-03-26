@@ -3,14 +3,14 @@
     <div class="col-lg-2">
         <button type="button" routerLink="/newskill" class="btn btn-dark nueva_habilidad" *ngIf="isLogged"> Agregar habilidad</button>
     </div>
-    <div class="text-center col-sm-4 col-md-4 col lg-4 circulo" *ngFor="let skill of skill">
+    <div class="text-center col-sm-2 col-md-2 col lg-2 circulo" *ngFor="let skill of skill">
         <circle-progress 
             [percent]="(skill.porcentaje)" 
             [radius]="100" 
-            [imageSrc]="''"
+            [imageSrc]="(skill.img)"
             [title]="(skill.nombre)"
-            [imageHeight]="100"
-            [imageWidth]="100"
+            [imageHeight]="80"
+            [imageWidth]="80"
             [showImage]="false"
             [showUnits]="false"
             [showTitle]="true"

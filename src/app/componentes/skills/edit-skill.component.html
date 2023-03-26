@@ -10,6 +10,17 @@
                     <label for="porcentaje"> Porcentaje</label>
                     <input type="text" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="skill.porcentaje" required>
                 </div>
+                
+                <div class="form-group">
+                    <label for="img">Imagen</label>
+                    <input type="file" class="form-control" id="img" name="img" [(ngModel)]="skill.img" (change)="uploadImage($event)" accept=".jpg, .png">
+                </div>
+                
+                <div class="imagen">
+                    <img [src]="imageService.url" width="180px">    
+                </div>
+                             
+                <br>
                 <button class="btn btn-primary">
                     Guardar cambios
                 </button>

@@ -11,9 +11,9 @@ export class EducacionService {
   
   //URL = environment.URL + 'educacion/';
   
-  URL = 'https://portfolio-bkd-nicolas-butterfield.onrender.com/educacion/';
+  //URL = 'https://portfolio-bkd-nicolas-butterfield.onrender.com/educacion/';
 
-  //URL = 'http://localhost:8080/educacion/';
+  URL = 'http://localhost:8080/educacion/';
 
   constructor(private httpClient: HttpClient) { }
 

@@ -10,9 +10,9 @@ export class ProjectServiceService {
 
   //URL = environment.URL + 'projects/';
   
-  URL = 'https://portfolio-bkd-nicolas-butterfield.onrender.com/projects/';
+  //URL = 'https://portfolio-bkd-nicolas-butterfield.onrender.com/projects/';
 
-  //URL = 'http://localhost:8080/projects/';
+  URL = 'http://localhost:8080/projects/';
 
   constructor(private httpClient: HttpClient) { }
 

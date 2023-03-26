@@ -12,9 +12,9 @@ export class PersonaService {
   
   //URL = environment.URL + 'personas/';
   
-  URL = 'https://portfolio-bkd-nicolas-butterfield.onrender.com/personas/';
+  //URL = 'https://portfolio-bkd-nicolas-butterfield.onrender.com/personas/';
   
-  //URL = 'http://localhost:8080/personas/';
+  URL = 'http://localhost:8080/personas/';
   
   constructor(private httpClient: HttpClient) { }
 

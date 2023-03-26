@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Storage, ref, uploadBytes, list, getDownloadURL } from '@angular/fire/storage';
+import { Storage, ref, uploadBytes, list, getDownloadURL } from '@angular/fire/storage'
 
 @Injectable({
   providedIn: 'root'
@@ -13,11 +13,11 @@ export class ImageService {
 
   public uploadImage($event: any, name: string){
     const file = $event.target.files[0]
-    console.log("el contenido de file es: "+ file);
+    console.log(file);
     const imgRef = ref(this.storage, `imagen/` + name)
     uploadBytes(imgRef, file)
     .then(response => {this.getImages()})
-    .catch(error => console.log(error))
+    .catch(error => console.log(error));
   }
 
   getImages(){

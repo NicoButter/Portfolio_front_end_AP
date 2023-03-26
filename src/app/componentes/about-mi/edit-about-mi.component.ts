@@ -43,8 +43,8 @@ export class EditAboutMiComponent {
   }
 
   uploadImage($event: any){
-    const id = this.activatedRouter.snapshot.params['id'];
-    const name = 'perfil_' + id;
+    //const id = this.activatedRouter.snapshot.params['id'];
+    const name = 'perfil_' + 1;
     this.imageService.uploadImage($event, name);
   }
 
