@@ -17,33 +17,33 @@ export class EditProjectsComponent {
   constructor(public imageService: ImageService, private activatedRouter: ActivatedRoute, private projectService: ProjectServiceService, private router: Router) { }
 
   ngOnInit() {
-    const id = this.activatedRouter.snapshot.params['id'];
+    const id = this.activatedRouter.snapshot.params['id']
     this.projectService.detail(id).subscribe(
       data =>{
         this.project = data; 
       }, err =>{
         alert("Ocurrio un error al cargar el registro del proyecto, reintente.");
-        this.router.navigate(['']);
+        this.router.navigate([''])
       }
     )
   }
 
   onUpdate(): void{
     const id = this.activatedRouter.snapshot.params['id']
-    this.project.img = this.imageService.url;
+    this.project.img = this.imageService.url
     this.projectService.update(id, this.project).subscribe(
       data => {
-        this.router.navigate(['']);
+        this.router.navigate([''])
       }, err => {
         alert("Error al intentar modificar el registro del proyecto, reintente.");
-        this.router.navigate(['']);
+        this.router.navigate([''])
       }
     )
   }
 
   uploadImage($event: any){
     const id = this.activatedRouter.snapshot.params['id']
-    const name = 'proyecto_' + id
+    const name = 'proyecto_'+id
     this.imageService.uploadImage($event, name);
   }
 

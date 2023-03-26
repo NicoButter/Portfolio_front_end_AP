@@ -23,11 +23,11 @@ export class NeweducacionComponent {
     const educacion = new Educacion(this.nombreE, this.descripcionE);
     this.educacionS.save(educacion).subscribe(
       data => {
-        alert("Educacion agregada correctamente.");
-        this.router.navigate(['']);
+        alert("Educacion agregada correctamente.")
+        this.router.navigate([''])
       }, err =>{
-        alert("Falla al agregar.");
-        this.router.navigate(['']);
+        alert("Falla al agregar.")
+        this.router.navigate([''])
       }
     )
   }

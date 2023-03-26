@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Educacion } from 'src/app/model/educacion';
 import { Projects } from 'src/app/model/projects';
 import { ProjectServiceService } from 'src/app/service/project-service.service';
 import { TokenService } from 'src/app/service/token.service';
@@ -23,16 +22,16 @@ export class ProjectsComponent {
     this.cargarProject();
 
     if(this.tokenService.getToken()){
-      this.isLogged = true;
+      this.isLogged = true
     } else{
-      this.isLogged = false;
+      this.isLogged = false
     }
   }
 
   cargarProject(): void{
     this.projectsService.lista().subscribe(
       data =>{
-        this.projects = data;
+        this.projects = data
       } 
     )
   }
@@ -43,7 +42,7 @@ export class ProjectsComponent {
         data => {
           this.cargarProject();
         }, err => {
-          alert("Error al intentar eliminar el registro.");
+          alert("Error al intentar eliminar el registro.")
         }
       )
     }

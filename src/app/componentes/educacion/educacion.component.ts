@@ -19,26 +19,26 @@ export class EducacionComponent {
 
   ngOnInit(): void{
     
-    this.cargarEducacion();
+    this.cargarEducacion()
 
     if(this.tokenService.getToken()){
-      this.isLogged = true;
+      this.isLogged = true
     } else{
-      this.isLogged = false;
+      this.isLogged = false
     }
   }
 
   cargarEducacion(): void{
-    this.educacionS.lista().subscribe(data => {this.educacion = data;})
+    this.educacionS.lista().subscribe(data => {this.educacion = data})
   }
 
   borrar(id: number){
     if(id != undefined){
       this.educacionS.delete(id).subscribe(
         data => {
-          this.cargarEducacion();
+          this.cargarEducacion()
         }, err => {
-          alert("Error al intentar eliminar el registro.");
+          alert("Error al intentar eliminar el registro.")
         }
       )
     }

@@ -27,18 +27,18 @@ export class NuevoProyecto implements OnInit {
     this.projectS.save(proyecto).subscribe(
       data => {
         alert("El proyecto se agregó correctamente.");
-        this.router.navigate(['']);
+        this.router.navigate([''])
       }, err =>{
         alert("Ocurrio una falla al intentar agregar el proyecto, reintente.");
-        this.router.navigate(['']);
+        this.router.navigate([''])
       }
     )
   }
 
   uploadImage($event: any){
     const id = this.activatedRouter.snapshot.params['id']
-    const name = 'proyecto_' + id
-    this.imageService.uploadImage($event, name);
+    const name = 'proyecto_'+id
+    this.imageService.uploadImage($event, name)
   }
 
 }
