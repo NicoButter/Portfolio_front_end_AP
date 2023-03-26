@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Skills } from 'src/app/model/skills';
 import { SkillsService } from 'src/app/service/skills.service';
-import { ImageService } from 'src/app/service/image.service';
+/*import { ImageService } from 'src/app/service/image.service';*/
 
 
 @Component({
@@ -15,14 +15,14 @@ export class NewSkillComponent {
 
   nombre: string;
   porcentaje: number;
-  img: string;
+  /*img: string;*/
 
-  constructor(public imageService: ImageService, private skills: SkillsService, private router: Router, private activatedRouter: ActivatedRoute){}
+  constructor(/*public imageService: ImageService, */private skills: SkillsService, private router: Router, private activatedRouter: ActivatedRoute){}
 
   ngOnInit(){}
 
   onCreate(): void{
-    const skill = new Skills(this.nombre, this.porcentaje, this.img);
+    const skill = new Skills(this.nombre, this.porcentaje, /*this.img*/);
     this.skills.save(skill).subscribe(
       data => {
         alert("Habilidad creada correctamente.");
@@ -34,10 +34,10 @@ export class NewSkillComponent {
     )
   }
 
-  uploadImage($event: any){
+  /*uploadImage($event: any){
     const id = this.activatedRouter.snapshot.params['id'];
     const name = 'skill_' + id;
     this.imageService.uploadImage($event, name);
-  }
+  }*/
 
 }
