@@ -22,7 +22,7 @@ export class NewSkillComponent {
   ngOnInit(){}
 
   onCreate(): void{
-    const skill = new Skills(this.nombre, this.porcentaje, /*this.img*/);
+    const skill = new Skills(this.nombre, this.porcentaje /*,this.img*/);
     this.skills.save(skill).subscribe(
       data => {
         alert("Habilidad creada correctamente.");

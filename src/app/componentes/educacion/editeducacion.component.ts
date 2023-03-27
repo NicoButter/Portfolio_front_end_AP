@@ -30,10 +30,10 @@ export class EditeducacionComponent {
     const id = this.activatedRouter.snapshot.params['id']
     this.educacionS.update(id, this.educacion).subscribe(
       data => {
-        this.router.navigate([''])
+        this.router.navigate(['']);
       }, err => {
         alert("Error, no se puede editar.");
-        this.router.navigate([''])
+        this.router.navigate(['']);
       }
     )
  }
