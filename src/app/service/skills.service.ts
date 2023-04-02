@@ -10,9 +10,9 @@ import { environment } from 'src/environments/environment';
 
 export class SkillsService {
   
-  URL = environment.URL + 'skills/';
+  //URL = environment.URL + 'skills/';
   
-  //skillsURL = 'https://portfolio-bkd-nicolas-butterfield.onrender.com/skills/';
+  URL = 'https://portfolio-bkd-nicolas-butterfield.onrender.com/skills/';
 
   //skillsURL = 'http://localhost:8080/skills/'
 
