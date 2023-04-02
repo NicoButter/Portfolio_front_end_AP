@@ -12,30 +12,30 @@ export class SkillsService {
   
   //skillsURL = environment.URL + 'skills/';
   
-  skillsURL = 'https://portfolio-bkd-nicolas-butterfield.onrender.com/skills';
+  skillsURL = 'https://portfolio-bkd-nicolas-butterfield.onrender.com/skills/';
 
   //skillsURL = 'http://localhost:8080/skills/'
 
   constructor(private httpClient: HttpClient) {}
   
   public lista(): Observable<Skills[]>  {
-    return this.httpClient.get<Skills[]>(this.skillsURL + '/lista');
+    return this.httpClient.get<Skills[]>(this.skillsURL + 'lista');
   }
 
   public detail(id: number):Observable<Skills>{
-    return this.httpClient.get<Skills>(this.skillsURL + `/detail/${id}`);
+    return this.httpClient.get<Skills>(this.skillsURL + `detail/${id}`);
   }
 
   public save(skill: Skills): Observable<any>{
-    return this.httpClient.post<any>(this.skillsURL + '/create', skill);
+    return this.httpClient.post<any>(this.skillsURL + 'create', skill);
   }
 
   public update(id: number, skill: Skills): Observable<any>{
-    return this.httpClient.put<any>(this.skillsURL + `/update/${id}`, skill);
+    return this.httpClient.put<any>(this.skillsURL + `update/${id}`, skill);
   }
 
   public delete(id: number): Observable<any>{
-    return this.httpClient.delete(this.skillsURL + `/delete/${id}`);
+    return this.httpClient.delete(this.skillsURL + `delete/${id}`);
   }
 
 }
