@@ -16,6 +16,16 @@ span{
 
 /*ESTILO PARA LA FOTO PERSONAL*/
 
+.mi_foto {
+    border-radius: 50%; /* Aplica bordes redondeados */
+    width: 17%;
+    left: 1%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);  /*Agrega sombras*/     
+    position: absolute; /* Ajusta la posición */
+    top: 80%; /* Posiciona la imagen en el centro vertical*/ 
+    transform: translateY(-50%); /* Ajusta la posición vertical*/ 
+}
+
 @media(min-width: 576px){
     .mi_foto{
         position: absolute;
@@ -23,9 +33,21 @@ span{
         border-radius: 80%;
         box-shadow: 5px 5px 5px black;
         left: 1%;
-        top: 620px;
+        top: 80%;
     }
 }
+
+@media(max-width: 1495px){
+    .mi_foto{
+        position: absolute;
+        width: 17%;
+        border-radius: 80%;
+        box-shadow: 5px 5px 5px black;
+        left: 1%;
+        top: 180px;
+    }
+}
+
 
 @media(max-width: 575px){
     .mi_foto{
@@ -45,11 +67,6 @@ span{
 
 }
 
-/*#sobre-mi{
-    font-weight: bold;
-    margin-top: 2px;
-}*/
-
 h1, h4{
     color: blanchedalmond;
     margin-left: 5px;
@@ -60,8 +77,8 @@ p{
 
 }
 
-.caja_sobre_mi{
+/*.caja_sobre_mi{
     display: flex;
     float: right;
     margin-left: 100px;
-}
+}*/

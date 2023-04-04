@@ -10,9 +10,9 @@ import { environment } from 'src/environments/environment';
 
 export class SExperienciaService {
  
-  //URL = environment.URL + 'explab/';
+  URL = environment.URL + 'explab/';
   
-  URL = 'https://portfolio-bkd-nicolas-butterfield.onrender.com/explab/';
+  //URL = 'https://portfolio-bkd-nicolas-butterfield.onrender.com/explab/';
 
   //URL = 'http://localhost:8080/explab/'
 

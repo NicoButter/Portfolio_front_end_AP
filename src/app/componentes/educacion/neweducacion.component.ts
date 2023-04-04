@@ -11,8 +11,8 @@ import { EducacionService } from 'src/app/service/educacion.service';
 
 export class NeweducacionComponent {
   
-  nombreE: string;
-  descripcionE: string;
+  nombreE: string = "";
+  descripcionE: string = "";
 
   constructor(private educacionS: EducacionService, private router: Router) { }
 
